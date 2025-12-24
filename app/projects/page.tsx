@@ -66,7 +66,7 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-[#f5f3ef] min-h-screen">
+    <div className="bg-[#EDE9F5] min-h-screen">
       {/* Header */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,10 +91,10 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group bg-white rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="group bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Project Image/Icon */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center text-7xl group-hover:scale-105 transition-transform duration-300">
+                <div className="aspect-[4/3] bg-gradient-to-br from-[#FFD93D] to-[#FFC700] flex items-center justify-center text-7xl group-hover:scale-105 transition-transform duration-300">
                   {project.image}
                 </div>
 
@@ -141,7 +141,7 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* View Button */}
-                  <button className="w-full bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-all flex items-center justify-center group">
+                  <button className="w-full bg-[#FFD93D] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#FFC700] transition-all flex items-center justify-center group shadow-md hover:shadow-lg">
                     View Project
                     <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -165,7 +165,7 @@ export default function ProjectsPage() {
           </p>
           <Link
             href="/support"
-            className="inline-flex items-center bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all"
+            className="inline-flex items-center bg-[#FFD93D] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#FFC700] transition-all shadow-lg hover:shadow-xl"
           >
             Get in touch
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

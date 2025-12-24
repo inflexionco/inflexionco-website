@@ -41,7 +41,7 @@ export default function SupportPage() {
   };
 
   return (
-    <div className="bg-[#f5f3ef] min-h-screen">
+    <div className="bg-[#EDE9F5] min-h-screen">
       {/* Header */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,9 +66,9 @@ export default function SupportPage() {
             {/* Contact Cards */}
             <div className="lg:col-span-1 space-y-6">
               {/* Email Card */}
-              <div className="bg-white rounded-3xl p-8 hover:shadow-lg transition-shadow">
-                <div className="w-12 h-12 bg-black rounded-2xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-[#FFD93D] rounded-2xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
@@ -80,9 +80,9 @@ export default function SupportPage() {
               </div>
 
               {/* Response Time Card */}
-              <div className="bg-white rounded-3xl p-8 hover:shadow-lg transition-shadow">
-                <div className="w-12 h-12 bg-black rounded-2xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-[#FFD93D] rounded-2xl flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -225,10 +225,10 @@ export default function SupportPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full py-4 px-8 rounded-full font-semibold text-white transition-all flex items-center justify-center ${
+                    className={`w-full py-4 px-8 rounded-full font-semibold transition-all flex items-center justify-center shadow-lg ${
                       isSubmitting
-                        ? 'bg-gray-400 cursor-not-allowed'
-                        : 'bg-black hover:bg-gray-800'
+                        ? 'bg-gray-400 cursor-not-allowed text-white'
+                        : 'bg-[#FFD93D] text-black hover:bg-[#FFC700] hover:shadow-xl'
                     }`}
                   >
                     {isSubmitting ? (
@@ -262,15 +262,15 @@ export default function SupportPage() {
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
-            <div className="bg-[#f5f3ef] rounded-2xl p-6">
+            <div className="bg-[#EDE9F5] rounded-2xl p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold mb-2">How quickly will I receive a response?</h3>
               <p className="text-gray-600">We typically respond within 24-48 hours during business days. Urgent matters are prioritized.</p>
             </div>
-            <div className="bg-[#f5f3ef] rounded-2xl p-6">
+            <div className="bg-[#EDE9F5] rounded-2xl p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold mb-2">What information should I include in my message?</h3>
               <p className="text-gray-600">Please include the app/project name, a clear description of your issue or feedback, and any relevant screenshots or error messages.</p>
             </div>
-            <div className="bg-[#f5f3ef] rounded-2xl p-6">
+            <div className="bg-[#EDE9F5] rounded-2xl p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-bold mb-2">Do you offer technical support for all projects?</h3>
               <p className="text-gray-600">Yes! We provide ongoing support for all our applications. For custom projects, support terms are defined in the project agreement.</p>
             </div>

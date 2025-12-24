@@ -53,7 +53,7 @@ export default function Navigation() {
             </Link>
             <Link
               href="/support"
-              className="ml-4 bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-all"
+              className="ml-4 bg-[#FFD93D] text-black px-6 py-2 rounded-full font-semibold hover:bg-[#FFC700] transition-all shadow-md hover:shadow-lg"
             >
               Get Started
             </Link>
@@ -121,7 +121,7 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/support"
-                className="mt-2 bg-black text-white px-4 py-3 rounded-xl font-medium hover:bg-gray-800 transition-all text-center"
+                className="mt-2 bg-[#FFD93D] text-black px-4 py-3 rounded-xl font-semibold hover:bg-[#FFC700] transition-all text-center shadow-md"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Started

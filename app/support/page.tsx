@@ -41,7 +41,7 @@ export default function SupportPage() {
   };
 
   return (
-    <div className="bg-[#EDE9F5] min-h-screen">
+    <div className="bg-gradient-to-br from-[#E8F5E9] via-[#F1F8F4] to-[#E8F5E9] min-h-screen">
       {/* Header */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,27 +66,27 @@ export default function SupportPage() {
             {/* Contact Cards */}
             <div className="lg:col-span-1 space-y-6">
               {/* Email Card */}
-              <div className="bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all">
-                <div className="w-12 h-12 bg-[#FFD93D] rounded-2xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white rounded-2xl p-6 hover:shadow-lg transition-all">
+                <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mb-3">
+                  <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold mb-2">Email Us</h3>
-                <p className="text-gray-600 text-sm mb-3">For general inquiries and support</p>
-                <a href="mailto:support@inflexion.com" className="text-black font-medium hover:underline">
+                <h3 className="text-base font-bold mb-2">Email Us</h3>
+                <p className="text-gray-600 text-sm mb-2">For general inquiries and support</p>
+                <a href="mailto:support@inflexion.com" className="text-black text-sm font-medium hover:underline">
                   support@inflexion.com
                 </a>
               </div>
 
               {/* Response Time Card */}
-              <div className="bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all">
-                <div className="w-12 h-12 bg-[#FFD93D] rounded-2xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white rounded-2xl p-6 hover:shadow-lg transition-all">
+                <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mb-3">
+                  <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold mb-2">Quick Response</h3>
+                <h3 className="text-base font-bold mb-2">Quick Response</h3>
                 <p className="text-gray-600 text-sm">We typically respond within 24-48 hours on business days</p>
               </div>
 
@@ -225,10 +225,10 @@ export default function SupportPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full py-4 px-8 rounded-full font-semibold transition-all flex items-center justify-center shadow-lg ${
+                    className={`w-full py-4 px-8 rounded-full font-semibold transition-all flex items-center justify-center ${
                       isSubmitting
                         ? 'bg-gray-400 cursor-not-allowed text-white'
-                        : 'bg-[#FFD93D] text-black hover:bg-[#FFC700] hover:shadow-xl'
+                        : 'bg-black text-white hover:bg-gray-800'
                     }`}
                   >
                     {isSubmitting ? (
@@ -261,18 +261,18 @@ export default function SupportPage() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12 text-center">
             Frequently Asked Questions
           </h2>
-          <div className="space-y-6">
-            <div className="bg-[#EDE9F5] rounded-2xl p-6 hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-bold mb-2">How quickly will I receive a response?</h3>
-              <p className="text-gray-600">We typically respond within 24-48 hours during business days. Urgent matters are prioritized.</p>
+          <div className="space-y-4">
+            <div className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-base font-bold mb-2">How quickly will I receive a response?</h3>
+              <p className="text-sm text-gray-600">We typically respond within 24-48 hours during business days. Urgent matters are prioritized.</p>
             </div>
-            <div className="bg-[#EDE9F5] rounded-2xl p-6 hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-bold mb-2">What information should I include in my message?</h3>
-              <p className="text-gray-600">Please include the app/project name, a clear description of your issue or feedback, and any relevant screenshots or error messages.</p>
+            <div className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-base font-bold mb-2">What information should I include in my message?</h3>
+              <p className="text-sm text-gray-600">Please include the app/project name, a clear description of your issue or feedback, and any relevant screenshots or error messages.</p>
             </div>
-            <div className="bg-[#EDE9F5] rounded-2xl p-6 hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-bold mb-2">Do you offer technical support for all projects?</h3>
-              <p className="text-gray-600">Yes! We provide ongoing support for all our applications. For custom projects, support terms are defined in the project agreement.</p>
+            <div className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-shadow">
+              <h3 className="text-base font-bold mb-2">Do you offer technical support for all projects?</h3>
+              <p className="text-sm text-gray-600">Yes! We provide ongoing support for all our applications. For custom projects, support terms are defined in the project agreement.</p>
             </div>
           </div>
         </div>

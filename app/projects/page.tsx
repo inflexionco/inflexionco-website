@@ -66,7 +66,7 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-[#EDE9F5] min-h-screen">
+    <div className="bg-gradient-to-br from-[#E8F5E9] via-[#F1F8F4] to-[#E8F5E9] min-h-screen">
       {/* Header */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,22 +91,22 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group bg-white rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
               >
                 {/* Project Image/Icon */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-[#FFD93D] to-[#FFC700] flex items-center justify-center text-7xl group-hover:scale-105 transition-transform duration-300">
+                <div className="aspect-[4/3] bg-gray-50 flex items-center justify-center text-6xl">
                   {project.image}
                 </div>
 
                 {/* Project Content */}
-                <div className="p-8">
+                <div className="p-6">
                   {/* Category & Status */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-medium text-gray-500 uppercase">
                       {project.category}
                     </span>
                     <span
-                      className={`text-xs font-semibold px-3 py-1 rounded-full ${
+                      className={`text-xs font-semibold px-2 py-1 rounded-full ${
                         project.status === 'Live'
                           ? 'bg-green-100 text-green-700'
                           : project.status === 'Beta'
@@ -119,21 +119,21 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-black transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {project.name}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-sm text-gray-600 mb-4 leading-relaxed">
                     {project.description}
                   </p>
 
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full"
+                        className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-md"
                       >
                         {tech}
                       </span>
@@ -141,9 +141,9 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* View Button */}
-                  <button className="w-full bg-[#FFD93D] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#FFC700] transition-all flex items-center justify-center group shadow-md hover:shadow-lg">
+                  <button className="w-full bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition-all flex items-center justify-center">
                     View Project
-                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </button>
@@ -165,7 +165,7 @@ export default function ProjectsPage() {
           </p>
           <Link
             href="/support"
-            className="inline-flex items-center bg-[#FFD93D] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#FFC700] transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all"
           >
             Get in touch
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

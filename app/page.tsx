@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-[#E8F5E9] via-[#F1F8F4] to-[#E8F5E9]">
+    <div className="bg-gradient-to-br from-[#E8F8F5] via-[#F5FBF8] to-[#FEF9F0]">
       {/* Hero Section */}
       <section className="min-h-[85vh] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -39,21 +39,21 @@ export default function Home() {
 
             {/* Right Content - Stats */}
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div className="text-4xl font-bold text-black mb-2">15+</div>
-                <div className="text-sm text-gray-600">Years Experience</div>
+              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm hover:shadow-md transition-all border border-[#E8F8F5]">
+                <div className="text-4xl font-bold text-gray-900 mb-2">15+</div>
+                <div className="text-sm text-gray-700">Years Experience</div>
               </div>
-              <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div className="text-4xl font-bold text-black mb-2">280+</div>
-                <div className="text-sm text-gray-600">Projects Delivered</div>
+              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm hover:shadow-md transition-all border border-[#FEF9F0]">
+                <div className="text-4xl font-bold text-gray-900 mb-2">280+</div>
+                <div className="text-sm text-gray-700">Projects Delivered</div>
               </div>
-              <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div className="text-4xl font-bold text-black mb-2">99%</div>
-                <div className="text-sm text-gray-600">Client Satisfaction</div>
+              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm hover:shadow-md transition-all border border-[#E8F8F5]">
+                <div className="text-4xl font-bold text-gray-900 mb-2">99%</div>
+                <div className="text-sm text-gray-700">Client Satisfaction</div>
               </div>
-              <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all">
-                <div className="text-4xl font-bold text-black mb-2">50+</div>
-                <div className="text-sm text-gray-600">Team Members</div>
+              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-sm hover:shadow-md transition-all border border-[#FEF9F0]">
+                <div className="text-4xl font-bold text-gray-900 mb-2">50+</div>
+                <div className="text-sm text-gray-700">Team Members</div>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-gradient-to-br from-[#E8F5E9] via-[#F1F8F4] to-[#E8F5E9]">
+      <section className="py-24 bg-gradient-to-br from-[#E8F8F5] via-[#F5FBF8] to-[#FEF9F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
             <div className="inline-block bg-black text-white text-xs px-3 py-1 rounded-full mb-4">
@@ -87,8 +87,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Service Card 1 */}
-            <div className="bg-white p-8 rounded-2xl hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+            <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl hover:shadow-lg transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
@@ -100,8 +100,8 @@ export default function Home() {
             </div>
 
             {/* Service Card 2 */}
-            <div className="bg-white p-8 rounded-2xl hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+            <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl hover:shadow-lg transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -113,8 +113,8 @@ export default function Home() {
             </div>
 
             {/* Service Card 3 */}
-            <div className="bg-white p-8 rounded-2xl hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+            <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl hover:shadow-lg transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
@@ -126,8 +126,8 @@ export default function Home() {
             </div>
 
             {/* Service Card 4 */}
-            <div className="bg-white p-8 rounded-2xl hover:shadow-lg transition-all">
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+            <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl hover:shadow-lg transition-all border border-gray-100">
+              <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>

@@ -66,7 +66,7 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-gradient-to-br from-[#E8F5E9] via-[#F1F8F4] to-[#E8F5E9] min-h-screen">
+    <div className="bg-gradient-to-br from-[#E8F8F5] via-[#F5FBF8] to-[#FEF9F0] min-h-screen">
       {/* Header */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group bg-white rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
+                className="group bg-white/95 backdrop-blur-sm rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100"
               >
                 {/* Project Image/Icon */}
                 <div className="aspect-[4/3] bg-gray-50 flex items-center justify-center text-6xl">

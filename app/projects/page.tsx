@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import BackToTop from '../components/BackToTop';
 
 export const metadata: Metadata = {
-  title: 'Our Projects - Inflexion',
+  title: 'Our Projects - Inflexion Co.',
   description: 'Explore our portfolio of innovative applications and software solutions',
 };
 
@@ -14,7 +15,7 @@ const projects = [
     description: 'A revolutionary mobile application that simplifies daily tasks and boosts productivity with AI-powered features.',
     category: 'Mobile App',
     technologies: ['React Native', 'Node.js', 'MongoDB'],
-    status: 'Live',
+    status: 'Beta',
     image: '🚀',
   },
   {
@@ -32,49 +33,22 @@ const projects = [
     description: 'AI-powered analytics tool that transforms complex data into actionable insights for businesses.',
     category: 'Data Analytics',
     technologies: ['Python', 'TensorFlow', 'React'],
-    status: 'Live',
+    status: 'In Development',
     image: '📊',
-  },
-  {
-    id: 4,
-    name: 'Project Delta',
-    description: 'Modern e-commerce solution with advanced features, seamless payments, and inventory management.',
-    category: 'E-Commerce',
-    technologies: ['Next.js', 'Stripe', 'Firebase'],
-    status: 'Live',
-    image: '🛒',
-  },
-  {
-    id: 5,
-    name: 'Project Epsilon',
-    description: 'Real-time communication platform for remote teams with video conferencing and screen sharing.',
-    category: 'Communication',
-    technologies: ['WebRTC', 'Socket.io', 'Vue.js'],
-    status: 'Beta',
-    image: '💬',
-  },
-  {
-    id: 6,
-    name: 'Project Zeta',
-    description: 'Cloud-based inventory management system with predictive analytics and automated reordering.',
-    category: 'Business Tools',
-    technologies: ['Angular', 'Express', 'MySQL'],
-    status: 'Live',
-    image: '📦',
   },
 ];
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-gradient-to-br from-[#E8F8F5] via-[#F5FBF8] to-[#FEF9F0] min-h-screen">
+    <div className="bg-gray-50 min-h-screen">
       {/* Header */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <div className="inline-block bg-black text-white text-xs px-3 py-1 rounded-full mb-6">
+            <div className="inline-block bg-blue-600 text-white text-sm font-medium px-5 py-2 rounded-full mb-6">
               Our Portfolio
             </div>
-            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
               Explore our work
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
@@ -91,22 +65,22 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group bg-white/95 backdrop-blur-sm rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100"
+                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200"
               >
                 {/* Project Image/Icon */}
-                <div className="aspect-[4/3] bg-gray-50 flex items-center justify-center text-6xl">
+                <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center text-7xl group-hover:scale-105 transition-transform duration-300">
                   {project.image}
                 </div>
 
                 {/* Project Content */}
-                <div className="p-6">
+                <div className="p-8">
                   {/* Category & Status */}
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-medium text-gray-500 uppercase">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
                       {project.category}
                     </span>
                     <span
-                      className={`text-xs font-semibold px-2 py-1 rounded-full ${
+                      className={`text-xs font-semibold px-3 py-1 rounded-full ${
                         project.status === 'Live'
                           ? 'bg-green-100 text-green-700'
                           : project.status === 'Beta'
@@ -119,21 +93,21 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-black transition-colors">
                     {project.name}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-600 mb-6 leading-relaxed">
                     {project.description}
                   </p>
 
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-md"
+                        className="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full"
                       >
                         {tech}
                       </span>
@@ -141,9 +115,9 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* View Button */}
-                  <button className="w-full bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition-all flex items-center justify-center">
+                  <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all flex items-center justify-center group">
                     View Project
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </button>
@@ -157,7 +131,7 @@ export default function ProjectsPage() {
       {/* CTA Section */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
             Have a project in mind?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
@@ -165,7 +139,7 @@ export default function ProjectsPage() {
           </p>
           <Link
             href="/support"
-            className="inline-flex items-center bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all"
+            className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all"
           >
             Get in touch
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -174,6 +148,8 @@ export default function ProjectsPage() {
           </Link>
         </div>
       </section>
+
+      <BackToTop />
     </div>
   );
 }

@@ -175,7 +175,7 @@ export default function SupportPage() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-500"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-500 text-gray-900"
                         placeholder="John Doe"
                       />
                     </div>
@@ -192,7 +192,7 @@ export default function SupportPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-500"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-500 text-gray-900"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -210,7 +210,7 @@ export default function SupportPage() {
                         name="app"
                         value={formData.app}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-500"
+                        className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-500 text-gray-900"
                         placeholder="Which app is this about?"
                       />
                     </div>
@@ -279,7 +279,7 @@ export default function SupportPage() {
                       rows={9}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent resize-none transition-all placeholder:text-gray-500"
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-2xl focus:ring-2 focus:ring-black focus:border-transparent resize-none transition-all placeholder:text-gray-500 text-gray-900"
                       placeholder="Tell us how we can help you..."
                     />
                   </div>

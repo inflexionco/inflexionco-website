@@ -50,19 +50,19 @@ export default function Home() {
 
             {/* Right Content - Stats */}
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group">
+              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group text-center">
                 <div className="text-5xl font-bold text-gray-900 mb-2">9+</div>
                 <div className="text-gray-600 font-medium">Years Experience</div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group">
+              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group text-center">
                 <div className="text-5xl font-bold text-gray-900 mb-2">3+</div>
                 <div className="text-gray-600 font-medium">Projects Delivered</div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group">
+              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group text-center">
                 <div className="text-5xl font-bold text-gray-900 mb-2">99%</div>
                 <div className="text-gray-600 font-medium">Client Satisfaction</div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group">
+              <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 group text-center">
                 <div className="text-5xl font-bold text-gray-900 mb-2">1+</div>
                 <div className="text-gray-600 font-medium">Team Members</div>
               </div>

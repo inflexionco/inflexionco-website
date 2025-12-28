@@ -115,12 +115,15 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* View Button */}
-                  <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all flex items-center justify-center group">
+                  <Link
+                    href={`/projects/${project.name.toLowerCase().split(' ')[1]}`}
+                    className="w-full bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all flex items-center justify-center group"
+                  >
                     View Project
                     <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

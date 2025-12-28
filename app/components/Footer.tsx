@@ -41,16 +41,6 @@ export default function Footer() {
                   Projects
                 </Link>
               </li>
-              <li>
-                <Link href="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Pricing
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -61,11 +51,6 @@ export default function Footer() {
               <li>
                 <Link href="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   About
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Careers
                 </Link>
               </li>
               <li>
@@ -84,16 +69,6 @@ export default function Footer() {
                 <Link href="/support" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   Support
                 </Link>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  Blog
-                </a>
               </li>
             </ul>
           </div>

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
-@theme inline {
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-dm-sans);
+@variant dark (.dark &);
+
+@theme {
+  --font-family-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
 body {

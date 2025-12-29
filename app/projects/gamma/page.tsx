@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 
 export default function ProjectGammaPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 to-emerald-50 py-20">
+      <section className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 py-20 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-8">
               <Link
                 href="/projects"
-                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -28,17 +28,17 @@ export default function ProjectGammaPage() {
             <div className="inline-block bg-green-600 text-white text-sm font-medium px-5 py-2 rounded-full mb-6">
               Data Analytics
             </div>
-            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors">
               Project Gamma
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed transition-colors mb-8">
               AI-powered analytics tool that transforms complex data into actionable insights for businesses.
             </p>
             <div className="flex flex-wrap gap-3">
-              <span className="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">
+              <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-sm font-semibold px-4 py-2 rounded-full transition-colors">
                 In Development
               </span>
-              <span className="bg-gray-100 text-gray-700 text-sm font-medium px-4 py-2 rounded-full">
+              <span className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm font-medium px-4 py-2 rounded-full transition-colors">
                 Enterprise SaaS
               </span>
             </div>
@@ -47,21 +47,21 @@ export default function ProjectGammaPage() {
       </section>
 
       {/* Project Overview */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6 tracking-tight">
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors">
                 Data-Driven Intelligence
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed transition-colors mb-6">
                 Project Gamma empowers businesses to make informed decisions by turning raw data into clear, actionable insights. Built with advanced AI and machine learning algorithms that identify patterns and predict trends.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
                 Whether you're analyzing customer behavior, optimizing operations, or forecasting market trends, Gamma provides the tools and intelligence you need to stay ahead.
               </p>
             </div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl flex items-center justify-center text-8xl">
+            <div className="aspect-[4/3] bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 rounded-2xl flex items-center justify-center text-8xl transition-colors">
               📊
             </div>
           </div>
@@ -69,92 +69,92 @@ export default function ProjectGammaPage() {
       </section>
 
       {/* Key Features */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-50 dark:bg-gray-800 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block bg-green-600 text-white text-sm font-medium px-5 py-2.5 rounded-full mb-4">
               Features
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight transition-colors">
               Intelligent analytics platform
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Feature 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
               <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Interactive Dashboards</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors">Interactive Dashboards</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed transition-colors">
                 Customizable dashboards with drag-and-drop widgets for real-time data visualization.
               </p>
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
               <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">AI Insights</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors">AI Insights</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed transition-colors">
                 Machine learning models that automatically detect anomalies and suggest optimizations.
               </p>
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
               <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Predictive Analytics</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors">Predictive Analytics</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed transition-colors">
                 Forecast future trends and outcomes using advanced statistical models.
               </p>
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
               <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Data Integration</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors">Data Integration</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed transition-colors">
                 Connect to multiple data sources including databases, APIs, and cloud storage.
               </p>
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
               <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Automated Reports</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors">Automated Reports</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed transition-colors">
                 Generate comprehensive reports automatically and schedule delivery to stakeholders.
               </p>
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
               <div className="w-12 h-12 bg-pink-600 rounded-xl flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Enterprise Security</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors">Enterprise Security</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed transition-colors">
                 Role-based access control and data encryption to keep your information secure.
               </p>
             </div>
@@ -163,68 +163,68 @@ export default function ProjectGammaPage() {
       </section>
 
       {/* Technology Stack */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block bg-green-600 text-white text-sm font-medium px-5 py-2.5 rounded-full mb-4">
               Technology
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight transition-colors">
               Enterprise-grade architecture
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border border-blue-100">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Frontend</h3>
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-8 rounded-2xl border border-blue-100 dark:border-blue-800 transition-colors">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">Frontend</h3>
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">React 18</span>
+                  <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">React 18</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">D3.js</span>
+                  <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">D3.js</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Recharts</span>
+                  <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">Recharts</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Data Processing</h3>
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-8 rounded-2xl border border-green-100 dark:border-green-800 transition-colors">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">Data Processing</h3>
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Python</span>
+                  <div className="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">Python</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Pandas</span>
+                  <div className="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">Pandas</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Apache Spark</span>
+                  <div className="w-2 h-2 bg-green-600 dark:bg-green-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">Apache Spark</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border border-purple-100">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">ML & AI</h3>
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-8 rounded-2xl border border-purple-100 dark:border-purple-800 transition-colors">
+              <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">ML & AI</h3>
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">TensorFlow</span>
+                  <div className="w-2 h-2 bg-purple-600 dark:bg-purple-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">TensorFlow</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">scikit-learn</span>
+                  <div className="w-2 h-2 bg-purple-600 dark:bg-purple-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">scikit-learn</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">PyTorch</span>
+                  <div className="w-2 h-2 bg-purple-600 dark:bg-purple-400 rounded-full mr-3"></div>
+                  <span className="text-gray-700 dark:text-gray-300 transition-colors">PyTorch</span>
                 </div>
               </div>
             </div>
@@ -233,63 +233,63 @@ export default function ProjectGammaPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-50 dark:bg-gray-800 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block bg-green-600 text-white text-sm font-medium px-5 py-2.5 rounded-full mb-4">
               Use Cases
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight transition-colors">
               Built for diverse needs
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Customer Analytics</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">Customer Analytics</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 transition-colors">
                 Understand customer behavior patterns, segment audiences, and optimize engagement strategies with detailed customer journey mapping.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Segmentation</span>
-                <span className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Churn Prediction</span>
-                <span className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">LTV Analysis</span>
+                <span className="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs px-3 py-1 rounded-full transition-colors">Segmentation</span>
+                <span className="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs px-3 py-1 rounded-full transition-colors">Churn Prediction</span>
+                <span className="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs px-3 py-1 rounded-full transition-colors">LTV Analysis</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Financial Intelligence</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">Financial Intelligence</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 transition-colors">
                 Monitor financial KPIs, detect fraud patterns, and forecast revenue with real-time financial data analysis.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Fraud Detection</span>
-                <span className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Forecasting</span>
-                <span className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Risk Analysis</span>
+                <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs px-3 py-1 rounded-full transition-colors">Fraud Detection</span>
+                <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs px-3 py-1 rounded-full transition-colors">Forecasting</span>
+                <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs px-3 py-1 rounded-full transition-colors">Risk Analysis</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Operations Optimization</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">Operations Optimization</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 transition-colors">
                 Streamline operations, reduce costs, and improve efficiency by analyzing operational data and identifying bottlenecks.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">Process Mining</span>
-                <span className="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">Capacity Planning</span>
-                <span className="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">Quality Control</span>
+                <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 text-xs px-3 py-1 rounded-full transition-colors">Process Mining</span>
+                <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 text-xs px-3 py-1 rounded-full transition-colors">Capacity Planning</span>
+                <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 text-xs px-3 py-1 rounded-full transition-colors">Quality Control</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Market Intelligence</h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">Market Intelligence</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 transition-colors">
                 Track market trends, analyze competitor performance, and identify opportunities with comprehensive market data analysis.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full">Trend Analysis</span>
-                <span className="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full">Competitor Tracking</span>
-                <span className="bg-orange-100 text-orange-700 text-xs px-3 py-1 rounded-full">Sentiment Analysis</span>
+                <span className="bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 text-xs px-3 py-1 rounded-full transition-colors">Trend Analysis</span>
+                <span className="bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 text-xs px-3 py-1 rounded-full transition-colors">Competitor Tracking</span>
+                <span className="bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 text-xs px-3 py-1 rounded-full transition-colors">Sentiment Analysis</span>
               </div>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function ProjectGammaPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-green-600 to-emerald-600 text-white">
+      <section className="py-24 bg-gradient-to-br from-green-600 to-emerald-600 text-white transition-colors">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
             Turn data into decisions
@@ -308,7 +308,7 @@ export default function ProjectGammaPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/support"
-              className="inline-flex items-center justify-center bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-xl"
+              className="inline-flex items-center justify-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-xl"
             >
               Schedule a Demo
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -317,7 +317,7 @@ export default function ProjectGammaPage() {
             </Link>
             <Link
               href="/projects"
-              className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 dark:hover:text-gray-900 transition-all duration-300 hover:scale-105"
             >
               View All Projects
             </Link>

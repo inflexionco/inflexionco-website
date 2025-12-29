@@ -3,6 +3,7 @@ import { Inter, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,15 +28,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${dmSans.variable} antialiased flex flex-col min-h-screen font-sans`}
       >
-        <Navigation />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
+        <ThemeProvider>
+          <Navigation />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

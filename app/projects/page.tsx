@@ -40,18 +40,18 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors">
       {/* Header */}
-      <section className="bg-white py-20">
+      <section className="bg-white dark:bg-gray-900 py-20 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="inline-block bg-blue-600 text-white text-sm font-medium px-5 py-2 rounded-full mb-6">
               Our Portfolio
             </div>
-            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors">
               Explore our work
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
               Discover our recent web design creations and find out how we transform vision into reality through innovative design and development.
             </p>
           </div>
@@ -65,10 +65,10 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200"
+                className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
               >
                 {/* Project Image/Icon */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center text-7xl group-hover:scale-105 transition-transform duration-300">
+                <div className="aspect-[4/3] bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 flex items-center justify-center text-7xl group-hover:scale-105 transition-transform duration-300">
                   {project.image}
                 </div>
 
@@ -76,16 +76,16 @@ export default function ProjectsPage() {
                 <div className="p-8">
                   {/* Category & Status */}
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <span className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider transition-colors">
                       {project.category}
                     </span>
                     <span
                       className={`text-xs font-semibold px-3 py-1 rounded-full ${
                         project.status === 'Live'
-                          ? 'bg-green-100 text-green-700'
+                          ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400'
                           : project.status === 'Beta'
-                          ? 'bg-yellow-100 text-yellow-700'
-                          : 'bg-blue-100 text-blue-700'
+                          ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400'
+                          : 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400'
                       }`}
                     >
                       {project.status}
@@ -93,12 +93,12 @@ export default function ProjectsPage() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-black transition-colors">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-black dark:group-hover:text-gray-200 transition-colors">
                     {project.name}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed transition-colors">
                     {project.description}
                   </p>
 
@@ -107,7 +107,7 @@ export default function ProjectsPage() {
                     {project.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full"
+                        className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs px-3 py-1 rounded-full transition-colors"
                       >
                         {tech}
                       </span>
@@ -117,7 +117,7 @@ export default function ProjectsPage() {
                   {/* View Button */}
                   <Link
                     href={`/projects/${project.name.toLowerCase().split(' ')[1]}`}
-                    className="w-full bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all flex items-center justify-center group"
+                    className="w-full bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-all flex items-center justify-center group"
                   >
                     View Project
                     <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,17 +132,17 @@ export default function ProjectsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors">
             Have a project in mind?
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 transition-colors">
             Let's collaborate to bring your vision to life
           </p>
           <Link
             href="/support"
-            className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all"
+            className="inline-flex items-center bg-blue-600 dark:bg-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-all"
           >
             Get in touch
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

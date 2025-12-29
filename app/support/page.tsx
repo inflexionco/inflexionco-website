@@ -95,36 +95,39 @@ export default function SupportPage() {
       {/* Main Content */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Top Contact Cards Row */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            {/* Email Card */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white transition-colors">Email Us</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm mb-3 transition-colors">For general inquiries and support</p>
+              <a href="mailto:support@inflexion.com" className="text-blue-600 dark:text-blue-400 font-medium hover:underline transition-colors">
+                support@inflexion.com
+              </a>
+            </div>
+
+            {/* Response Time Card */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
+              <div className="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white transition-colors">Quick Response</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm transition-colors">We typically respond within 24-48 hours on business days</p>
+            </div>
+          </div>
+
+          {/* Form and Quick Tips Row - Aligned at baseline */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Contact Cards */}
-            <div className="lg:col-span-1 space-y-6">
-              {/* Email Card */}
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
-                <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white transition-colors">Email Us</h3>
-                <p className="text-gray-700 dark:text-gray-300 text-sm mb-3 transition-colors">For general inquiries and support</p>
-                <a href="mailto:support@inflexion.com" className="text-blue-600 dark:text-blue-400 font-medium hover:underline transition-colors">
-                  support@inflexion.com
-                </a>
-              </div>
-
-              {/* Response Time Card */}
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
-                <div className="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white transition-colors">Quick Response</h3>
-                <p className="text-gray-700 dark:text-gray-300 text-sm transition-colors">We typically respond within 24-48 hours on business days</p>
-              </div>
-
-              {/* Tips Card */}
-              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-2xl p-8 shadow-sm transition-colors">
+            {/* Tips Card */}
+            <div className="lg:col-span-1">
+              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-2xl p-8 shadow-sm transition-colors h-full">
                 <h3 className="text-lg font-bold mb-4">✨ Quick Tips</h3>
                 <ul className="space-y-3 text-sm text-blue-100">
                   <li className="flex items-start">

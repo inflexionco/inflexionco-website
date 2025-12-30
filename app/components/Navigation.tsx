@@ -54,14 +54,15 @@ export default function Navigation() {
             >
               Support
             </Link>
+          </div>
+
+          {/* Theme Toggle - Desktop */}
+          <div className="hidden md:block">
             <ThemeToggle />
           </div>
 
-          <div className="hidden md:block w-6"></div>
-
           {/* Mobile menu button and theme toggle */}
           <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -82,6 +83,7 @@ export default function Navigation() {
                 )}
               </svg>
             </button>
+            <ThemeToggle />
           </div>
         </div>
 

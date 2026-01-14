@@ -138,7 +138,7 @@ export default function ProjectsPage() {
             Have a project in mind?
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 transition-colors">
-            Let's collaborate to bring your vision to life
+            Let&apos;s collaborate to bring your vision to life
           </p>
           <Link
             href="/support"

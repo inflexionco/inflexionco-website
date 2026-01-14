@@ -58,7 +58,7 @@ export default function ProjectGammaPage() {
                 Project Gamma empowers businesses to make informed decisions by turning raw data into clear, actionable insights. Built with advanced AI and machine learning algorithms that identify patterns and predict trends.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                Whether you're analyzing customer behavior, optimizing operations, or forecasting market trends, Gamma provides the tools and intelligence you need to stay ahead.
+                Whether you&apos;re analyzing customer behavior, optimizing operations, or forecasting market trends, Gamma provides the tools and intelligence you need to stay ahead.
               </p>
             </div>
             <div className="aspect-[4/3] bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 rounded-2xl flex items-center justify-center text-8xl transition-colors">

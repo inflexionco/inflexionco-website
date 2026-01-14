@@ -270,7 +270,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                "Inflexion Co. transformed our vision into reality. Their attention to detail and commitment to excellence is unmatched."
+                &quot;Inflexion Co. transformed our vision into reality. Their attention to detail and commitment to excellence is unmatched.&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -293,7 +293,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                "Working with Inflexion Co. was a game-changer for our business. They delivered beyond our expectations."
+                &quot;Working with Inflexion Co. was a game-changer for our business. They delivered beyond our expectations.&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -316,7 +316,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                "The team at Inflexion Co. is incredibly talented. They brought our ideas to life with stunning design and flawless execution."
+                &quot;The team at Inflexion Co. is incredibly talented. They brought our ideas to life with stunning design and flawless execution.&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -519,7 +519,7 @@ export default function Home() {
               </button>
               {openFaqIndex === 4 && (
                 <div className="px-8 pb-6 text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Getting started is easy! Simply reach out through our contact form or email us directly. We'll schedule a discovery call to discuss your project goals, requirements, and how we can help bring your vision to life.
+                  Getting started is easy! Simply reach out through our contact form or email us directly. We&apos;ll schedule a discovery call to discuss your project goals, requirements, and how we can help bring your vision to life.
                 </div>
               )}
             </div>
@@ -534,7 +534,7 @@ export default function Home() {
             Ready to build something amazing?
           </h2>
           <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-            Let's collaborate and bring your vision to life
+            Let&apos;s collaborate and bring your vision to life
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

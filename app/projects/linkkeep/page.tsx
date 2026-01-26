@@ -3,11 +3,11 @@ import Link from 'next/link';
 import BackToTop from '../../components/BackToTop';
 
 export const metadata: Metadata = {
-  title: 'Project Alpha - Inflexion Co.',
+  title: 'LinkKeep - Inflexion Co.',
   description: 'A revolutionary mobile application that simplifies daily tasks and boosts productivity with AI-powered features',
 };
 
-export default function ProjectAlphaPage() {
+export default function LinkKeepPage() {
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors">
       {/* Hero Section */}
@@ -29,7 +29,7 @@ export default function ProjectAlphaPage() {
               Mobile App
             </div>
             <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors">
-              Project Alpha
+              LinkKeep
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8 transition-colors">
               A revolutionary mobile application that simplifies daily tasks and boosts productivity with AI-powered features.
@@ -55,10 +55,10 @@ export default function ProjectAlphaPage() {
                 Revolutionizing Productivity
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6 transition-colors">
-                Project Alpha is designed to streamline your daily workflow by combining powerful task management with intelligent automation. Built for modern professionals who need to stay organized without the complexity.
+                LinkKeep is designed to streamline your daily workflow by combining powerful task management with intelligent automation. Built for modern professionals who need to stay organized without the complexity.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                With AI-powered suggestions and seamless cross-platform sync, Alpha helps you focus on what matters most while handling the routine tasks automatically.
+                With AI-powered suggestions and seamless cross-platform sync, LinkKeep helps you focus on what matters most while handling the routine tasks automatically.
               </p>
             </div>
             <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-2xl flex items-center justify-center text-8xl transition-colors">
@@ -239,7 +239,7 @@ export default function ProjectAlphaPage() {
             Interested in this project?
           </h2>
           <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-            Project Alpha is currently in beta. Get in touch to learn more about our development process.
+            LinkKeep is currently in beta. Get in touch to learn more about our development process.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

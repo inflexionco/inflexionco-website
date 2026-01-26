@@ -11,7 +11,8 @@ export const metadata: Metadata = {
 const projects = [
   {
     id: 1,
-    name: 'Project Alpha',
+    name: 'LinkKeep',
+    slug: 'linkkeep',
     description: 'A revolutionary mobile application that simplifies daily tasks and boosts productivity with AI-powered features.',
     category: 'Mobile App',
     technologies: ['React Native', 'Node.js', 'MongoDB'],
@@ -20,7 +21,8 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Project Beta',
+    name: 'Fundly',
+    slug: 'fundly',
     description: 'Web-based platform for seamless team collaboration with real-time updates and intelligent workflows.',
     category: 'Web Application',
     technologies: ['Next.js', 'TypeScript', 'PostgreSQL'],
@@ -29,12 +31,23 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Project Gamma',
+    name: 'EnergiQ',
+    slug: 'energiq',
     description: 'AI-powered analytics tool that transforms complex data into actionable insights for businesses.',
     category: 'Data Analytics',
     technologies: ['Python', 'TensorFlow', 'React'],
     status: 'In Development',
     image: '📊',
+  },
+  {
+    id: 4,
+    name: 'Tiny Tally',
+    slug: 'tinytally',
+    description: 'Minimalist expense tracking application that helps users manage their finances with simple, intuitive design.',
+    category: 'Finance App',
+    technologies: ['React', 'Node.js', 'SQLite'],
+    status: 'In Development',
+    image: '💰',
   },
 ];
 
@@ -116,7 +129,7 @@ export default function ProjectsPage() {
 
                   {/* View Button */}
                   <Link
-                    href={`/projects/${project.name.toLowerCase().split(' ')[1]}`}
+                    href={`/projects/${project.slug}`}
                     className="w-full bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-all flex items-center justify-center group"
                   >
                     View Project

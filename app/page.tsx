@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="text-gray-600 dark:text-gray-300 font-medium">Years Experience</div>
               </div>
               <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
-                <div className="text-5xl font-bold text-gray-900 dark:text-white mb-2">3+</div>
+                <div className="text-5xl font-bold text-gray-900 dark:text-white mb-2">4+</div>
                 <div className="text-gray-600 dark:text-gray-300 font-medium">Projects Delivered</div>
               </div>
               <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">

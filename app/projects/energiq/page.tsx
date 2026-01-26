@@ -3,11 +3,11 @@ import Link from 'next/link';
 import BackToTop from '../../components/BackToTop';
 
 export const metadata: Metadata = {
-  title: 'Project Gamma - Inflexion Co.',
+  title: 'EnergiQ - Inflexion Co.',
   description: 'AI-powered analytics tool that transforms complex data into actionable insights for businesses',
 };
 
-export default function ProjectGammaPage() {
+export default function EnergiQPage() {
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen transition-colors">
       {/* Hero Section */}
@@ -29,7 +29,7 @@ export default function ProjectGammaPage() {
               Data Analytics
             </div>
             <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight transition-colors">
-              Project Gamma
+              EnergiQ
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed transition-colors mb-8">
               AI-powered analytics tool that transforms complex data into actionable insights for businesses.
@@ -55,10 +55,10 @@ export default function ProjectGammaPage() {
                 Data-Driven Intelligence
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed transition-colors mb-6">
-                Project Gamma empowers businesses to make informed decisions by turning raw data into clear, actionable insights. Built with advanced AI and machine learning algorithms that identify patterns and predict trends.
+                EnergiQ empowers businesses to make informed decisions by turning raw data into clear, actionable insights. Built with advanced AI and machine learning algorithms that identify patterns and predict trends.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                Whether you&apos;re analyzing customer behavior, optimizing operations, or forecasting market trends, Gamma provides the tools and intelligence you need to stay ahead.
+                Whether you&apos;re analyzing customer behavior, optimizing operations, or forecasting market trends, EnergiQ provides the tools and intelligence you need to stay ahead.
               </p>
             </div>
             <div className="aspect-[4/3] bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 rounded-2xl flex items-center justify-center text-8xl transition-colors">
@@ -303,7 +303,7 @@ export default function ProjectGammaPage() {
             Turn data into decisions
           </h2>
           <p className="text-xl text-green-100 mb-10 leading-relaxed">
-            Project Gamma is under active development. Reach out to discuss how we can help with your analytics needs.
+            EnergiQ is under active development. Reach out to discuss how we can help with your analytics needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

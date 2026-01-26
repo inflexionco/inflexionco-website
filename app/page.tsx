@@ -24,17 +24,17 @@ export default function Home() {
                 Building the future of digital
               </div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight tracking-tight">
-                We craft digital products & experiences
+                We build digital products that matter
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Transforming ideas into stunning visuals — innovative apps and software that captivates, engages, and delivers results.
+                A passionate startup transforming ideas into innovative applications and software solutions. Let&apos;s build something amazing together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/projects"
-                  className="group inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300"
+                  className="group inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  See our work
+                  Explore our projects
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -43,28 +43,28 @@ export default function Home() {
                   href="/support"
                   className="inline-flex items-center justify-center bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300 border-2 border-gray-200 dark:border-gray-600"
                 >
-                  Get in touch
+                  Start a conversation
                 </Link>
               </div>
             </div>
 
             {/* Right Content - Stats */}
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
-                <div className="text-5xl font-bold text-gray-900 dark:text-white mb-2">9+</div>
-                <div className="text-gray-600 dark:text-gray-300 font-medium">Years Experience</div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-8 rounded-2xl shadow-md border border-blue-200 dark:border-blue-800/30 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+                <div className="text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2">15+</div>
+                <div className="text-gray-700 dark:text-gray-300 font-medium">Technologies</div>
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
-                <div className="text-5xl font-bold text-gray-900 dark:text-white mb-2">4+</div>
-                <div className="text-gray-600 dark:text-gray-300 font-medium">Projects Delivered</div>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-8 rounded-2xl shadow-md border border-purple-200 dark:border-purple-800/30 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+                <div className="text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2">4</div>
+                <div className="text-gray-700 dark:text-gray-300 font-medium">Active Projects</div>
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
-                <div className="text-5xl font-bold text-gray-900 dark:text-white mb-2">99%</div>
-                <div className="text-gray-600 dark:text-gray-300 font-medium">Client Satisfaction</div>
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-8 rounded-2xl shadow-md border border-green-200 dark:border-green-800/30 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+                <div className="text-5xl font-bold text-green-600 dark:text-green-400 mb-2">100%</div>
+                <div className="text-gray-700 dark:text-gray-300 font-medium">Code Quality</div>
               </div>
-              <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
-                <div className="text-5xl font-bold text-gray-900 dark:text-white mb-2">1+</div>
-                <div className="text-gray-600 dark:text-gray-300 font-medium">Team Members</div>
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 p-8 rounded-2xl shadow-md border border-amber-200 dark:border-amber-800/30 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
+                <div className="text-5xl font-bold text-amber-600 dark:text-amber-400 mb-2">24/7</div>
+                <div className="text-gray-700 dark:text-gray-300 font-medium">Availability</div>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function Home() {
               What we do
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">
-              Things we do that simply<br />make your product better
+              Expertise that brings<br />your ideas to life
             </h2>
           </div>
 
@@ -332,6 +332,93 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Story Section */}
+      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 transition-colors">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              <div className="inline-block bg-blue-600 dark:bg-blue-500 text-white text-sm font-medium px-5 py-2.5 rounded-full mb-4">
+                Our Story
+              </div>
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
+                Building products we believe in
+              </h2>
+              <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p>
+                  We&apos;re a passionate startup focused on creating digital products that solve real problems. Every project we build is one we&apos;d want to use ourselves.
+                </p>
+                <p>
+                  As developers and designers who understand the startup journey, we know what it takes to build quality products with limited resources. We&apos;re not just service providers—we&apos;re builders who care deeply about craftsmanship and user experience.
+                </p>
+                <p>
+                  Our approach is simple: modern technology, clean code, and genuine collaboration. We believe great products come from understanding problems deeply and iterating quickly.
+                </p>
+              </div>
+              <div className="mt-8 grid grid-cols-3 gap-4">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">2025</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Founded</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">4</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Active Projects</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">100%</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">Remote</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content - Values */}
+            <div className="space-y-6">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Innovation First</h3>
+                    <p className="text-gray-600 dark:text-gray-300">We experiment with cutting-edge technologies and aren&apos;t afraid to try new approaches to solve problems better.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">User-Centric</h3>
+                    <p className="text-gray-600 dark:text-gray-300">Every decision starts with the user. We build intuitive experiences that people actually enjoy using.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-lg">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Move Fast</h3>
+                    <p className="text-gray-600 dark:text-gray-300">We iterate quickly, learn from feedback, and aren&apos;t afraid to pivot when needed. Speed matters in startups.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-24 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -340,10 +427,10 @@ export default function Home() {
               Why Choose Us
             </div>
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">
-              Built for performance and scale
+              Why work with us
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We combine modern development practices with proven technologies to deliver solutions that grow with your business
+              We&apos;re a startup that understands startups. Modern tech stack, agile approach, and genuine passion for building great products.
             </p>
           </div>
 
@@ -355,8 +442,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">Fast & Efficient</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">Optimized performance and quick turnaround times for your projects</p>
+              <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">Agile & Efficient</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">Quick iterations and rapid development without compromising quality</p>
             </div>
 
             {/* Feature 2 */}
@@ -531,26 +618,29 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 tracking-tight">
-            Ready to build something amazing?
+            Let&apos;s build something great together
           </h2>
-          <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-            Let&apos;s collaborate and bring your vision to life
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+            Whether you have a clear vision or just an idea, we&apos;d love to hear about it. Let&apos;s explore how we can bring your project to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/projects"
+              href="/support"
               className="inline-flex items-center justify-center bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-xl"
             >
-              Explore our work
+              <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              Schedule a free consultation
+            </Link>
+            <Link
+              href="/projects"
+              className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105"
+            >
+              See our work
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </Link>
-            <Link
-              href="/support"
-              className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 hover:scale-105"
-            >
-              Get in touch
             </Link>
           </div>
         </div>

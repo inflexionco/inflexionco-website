@@ -200,12 +200,12 @@ export default function Home() {
               transform: translateX(0);
             }
             100% {
-              transform: translateX(-50%);
+              transform: translateX(calc(-8 * 16rem - 7 * 3rem));
             }
           }
 
           .tech-scroll {
-            animation: scroll 30s linear infinite;
+            animation: scroll 35s linear infinite;
           }
 
           .tech-scroll:hover {

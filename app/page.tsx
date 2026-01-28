@@ -200,7 +200,7 @@ export default function Home() {
               transform: translateX(0);
             }
             100% {
-              transform: translateX(calc(-8 * 16rem - 7 * 3rem));
+              transform: translateX(calc(-8 * 16rem - 8 * 3rem));
             }
           }
 

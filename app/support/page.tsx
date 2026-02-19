@@ -123,8 +123,8 @@ export default function SupportPage() {
               </div>
               <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white transition-colors">Email Us</h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm mb-3 transition-colors">For general inquiries and support</p>
-              <a href="mailto:support@inflexion.com" className="text-blue-600 dark:text-blue-400 font-medium hover:underline transition-colors">
-                support@inflexion.com
+              <a href="mailto:inflexionco+support@gmail.com" className="text-blue-600 dark:text-blue-400 font-medium hover:underline transition-colors">
+                inflexionco+support@gmail.com
               </a>
             </div>
 
@@ -472,7 +472,7 @@ export default function SupportPage() {
               </button>
               {openFaqIndex === 4 && (
                 <div className="px-8 pb-6 text-gray-600 dark:text-gray-300 leading-relaxed transition-colors">
-                  For urgent matters, please email us directly at support@inflexion.com with &quot;URGENT&quot; in the subject line. We&apos;ll prioritize your request and respond as soon as possible.
+                  For urgent matters, please email us directly at inflexionco+support@gmail.com with &quot;URGENT&quot; in the subject line. We&apos;ll prioritize your request and respond as soon as possible.
                 </div>
               )}
             </div>

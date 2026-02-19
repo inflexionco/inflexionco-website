@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 
 // Rate limiting store (in-memory, resets on server restart)
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
@@ -63,7 +64,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Log the submission (in production, send email here)
+    // Log the submission
     console.log('Contact form submission:', {
       name,
       email,
@@ -74,32 +75,74 @@ export async function POST(request: NextRequest) {
       ip,
     });
 
-    // TODO: Implement email sending
-    // Option 1: Use Resend (recommended for Vercel)
-    // Option 2: Use nodemailer with SMTP
-    // Option 3: Use SendGrid, Mailgun, etc.
-    //
-    // Example with Resend:
-    // import { Resend } from 'resend';
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: 'noreply@yourdomain.com',
-    //   to: process.env.CONTACT_EMAIL || 'support@inflexion.com',
-    //   subject: `[${category}] New contact form submission from ${name}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>App/Project:</strong> ${app || 'N/A'}</p>
-    //     <p><strong>Category:</strong> ${category}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `,
-    // });
+    // Send email using nodemailer
+    try {
+      // Create transporter
+      const transporter = nodemailer.createTransporter({
+        service: 'gmail',
+        auth: {
+          user: process.env.EMAIL_USER || 'inflexionco+support@gmail.com',
+          pass: process.env.EMAIL_PASSWORD, // App-specific password
+        },
+      });
 
-    // For now, simulate successful email sending
-    // In production, wrap the email sending in try-catch and handle errors
-    await new Promise(resolve => setTimeout(resolve, 500)); // Simulate network delay
+      // Email content
+      const mailOptions = {
+        from: process.env.EMAIL_USER || 'inflexionco+support@gmail.com',
+        to: 'inflexionco+support@gmail.com',
+        replyTo: email,
+        subject: `[${category.toUpperCase()}] New contact from ${name}`,
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #2563eb;">New Contact Form Submission</h2>
+            <hr style="border: 1px solid #e5e7eb; margin: 20px 0;">
+
+            <p><strong style="color: #374151;">Name:</strong> ${name}</p>
+            <p><strong style="color: #374151;">Email:</strong> <a href="mailto:${email}">${email}</a></p>
+            <p><strong style="color: #374151;">App/Project:</strong> ${app || 'N/A'}</p>
+            <p><strong style="color: #374151;">Category:</strong> <span style="background-color: #dbeafe; padding: 4px 8px; border-radius: 4px;">${category}</span></p>
+
+            <hr style="border: 1px solid #e5e7eb; margin: 20px 0;">
+
+            <p><strong style="color: #374151;">Message:</strong></p>
+            <div style="background-color: #f9fafb; padding: 16px; border-radius: 8px; border-left: 4px solid #2563eb;">
+              <p style="margin: 0; white-space: pre-wrap;">${message}</p>
+            </div>
+
+            <hr style="border: 1px solid #e5e7eb; margin: 20px 0;">
+
+            <p style="color: #6b7280; font-size: 12px;">
+              <strong>Timestamp:</strong> ${new Date().toISOString()}<br>
+              <strong>IP:</strong> ${ip}
+            </p>
+          </div>
+        `,
+        text: `
+New Contact Form Submission
+
+Name: ${name}
+Email: ${email}
+App/Project: ${app || 'N/A'}
+Category: ${category}
+
+Message:
+${message}
+
+---
+Timestamp: ${new Date().toISOString()}
+IP: ${ip}
+        `,
+      };
+
+      // Send email
+      await transporter.sendMail(mailOptions);
+
+      console.log('Email sent successfully to inflexionco+support@gmail.com');
+    } catch (emailError) {
+      console.error('Email sending error:', emailError);
+      // Continue anyway - don't fail the request if email fails
+      // The submission is logged, so you can retrieve it from logs
+    }
 
     return NextResponse.json(
       {

@@ -328,6 +328,72 @@ export const projects: ProjectData[] = [
       ],
     },
   },
+  {
+    id: 'glidebrowser',
+    name: 'GlideBrowser',
+    tagline: 'Modern web browsing for Android TV',
+    description: 'A sleek and intuitive browser designed specifically for Android TV. Navigate the web with ease using your remote control, enjoy optimized video playback, and experience the internet on the big screen.',
+    type: 'android',
+    platforms: ['Android TV'],
+    category: 'Utilities',
+    color: 'blue',
+    icon: '🌐',
+    screenshots: [
+      'https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1461151304267-38535e780c79?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop',
+    ],
+    features: [
+      {
+        icon: '📺',
+        title: 'TV-Optimized Interface',
+        description: 'Designed for 10-foot viewing with large, readable text and remote-friendly navigation.',
+      },
+      {
+        icon: '🎮',
+        title: 'Remote Control Support',
+        description: 'Full support for Android TV remotes and game controllers for seamless browsing.',
+      },
+      {
+        icon: '🔖',
+        title: 'Bookmark Management',
+        description: 'Save and organize your favorite websites with visual bookmarks and collections.',
+      },
+      {
+        icon: '🎥',
+        title: 'Video Optimization',
+        description: 'Enhanced video playback with support for popular streaming platforms and formats.',
+      },
+      {
+        icon: '⚡',
+        title: 'Fast Performance',
+        description: 'Built with Kotlin for native Android performance and smooth scrolling.',
+      },
+      {
+        icon: '🔒',
+        title: 'Privacy Mode',
+        description: 'Browse privately with incognito mode and built-in ad blocking capabilities.',
+      },
+    ],
+    techStack: {
+      frontend: ['Kotlin', 'Android TV SDK', 'Leanback Library', 'Material Design'],
+      backend: ['WebView Engine', 'Local Storage'],
+      infrastructure: ['Google Play Store', 'GitHub Actions'],
+    },
+    links: {
+      github: 'https://github.com/inflexionco/GlideBrowser',
+    },
+    status: 'development',
+    cta: {
+      title: 'Experience the web on your TV',
+      description: 'GlideBrowser is currently in active development. Follow the project on GitHub to stay updated with the latest features and release information.',
+      buttons: [
+        { text: 'View on GitHub', type: 'primary', link: 'https://github.com/inflexionco/GlideBrowser' },
+        { text: 'View All Projects', type: 'secondary', link: '/projects' },
+      ],
+    },
+  },
 ];
 
 export const getProjectById = (id: string): ProjectData | undefined => {

@@ -226,7 +226,7 @@ export default function EnergiQPage() {
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">See it in action</h2>
               <p className="text-gray-600 dark:text-gray-300">Experience the intuitive interface and powerful features</p>
             </motion.div>
-            <div className="flex gap-6 overflow-x-auto pb-4">
+            <div className="flex gap-6 overflow-x-auto pb-4 pt-4">
               {project.screenshots.slice(0, 4).map((screenshot, idx) => (
                 <motion.div
                   key={idx}
@@ -235,7 +235,7 @@ export default function EnergiQPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: idx * 0.1 }}
                   whileHover={{ y: -10 }}
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 my-auto"
                 >
                   <div className="w-[250px] h-[510px] bg-black rounded-[2.5rem] p-2.5 shadow-lg">
                     <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden">

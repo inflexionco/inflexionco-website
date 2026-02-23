@@ -123,22 +123,22 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/android/3DDC84" alt="Android" width={64} height={64} className="w-16 h-16" unoptimized />
+                <Image src="/icons/android.svg" alt="Android" width={64} height={64} className="w-16 h-16" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Android</span>
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/apple/000000" alt="iOS" width={64} height={64} className="w-16 h-16 dark:invert" unoptimized />
+                <Image src="/icons/apple.svg" alt="iOS" width={64} height={64} className="w-16 h-16 dark:invert" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">iOS</span>
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/kotlin/7F52FF" alt="Kotlin" width={64} height={64} className="w-16 h-16" unoptimized />
+                <Image src="/icons/kotlin.svg" alt="Kotlin" width={64} height={64} className="w-16 h-16" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Kotlin</span>
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/swift/F05138" alt="Swift" width={64} height={64} className="w-16 h-16" unoptimized />
+                <Image src="/icons/swift.svg" alt="Swift" width={64} height={64} className="w-16 h-16" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Swift</span>
               </div>
 
@@ -172,22 +172,22 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/android/3DDC84" alt="Android" width={64} height={64} className="w-16 h-16" unoptimized />
+                <Image src="/icons/android.svg" alt="Android" width={64} height={64} className="w-16 h-16" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Android</span>
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/apple/000000" alt="iOS" width={64} height={64} className="w-16 h-16 dark:invert" unoptimized />
+                <Image src="/icons/apple.svg" alt="iOS" width={64} height={64} className="w-16 h-16 dark:invert" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">iOS</span>
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/kotlin/7F52FF" alt="Kotlin" width={64} height={64} className="w-16 h-16" unoptimized />
+                <Image src="/icons/kotlin.svg" alt="Kotlin" width={64} height={64} className="w-16 h-16" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Kotlin</span>
               </div>
 
               <div className="flex flex-col items-center gap-2 flex-shrink-0 grayscale hover:grayscale-0 transition-all w-64">
-                <Image src="https://cdn.simpleicons.org/swift/F05138" alt="Swift" width={64} height={64} className="w-16 h-16" unoptimized />
+                <Image src="/icons/swift.svg" alt="Swift" width={64} height={64} className="w-16 h-16" />
                 <span className="text-sm font-medium text-gray-600 dark:text-gray-300">Swift</span>
               </div>
             </div>

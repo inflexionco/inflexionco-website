@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="bg-white dark:bg-gray-900 transition-colors">
       {/* Hero Section */}
-      <section className="min-h-[85vh] flex items-center bg-white dark:bg-gray-900 transition-colors">
+      <section className="min-h-[85vh] flex items-center bg-gradient-to-br from-blue-50 via-purple-50 to-orange-50 dark:from-blue-900/20 dark:via-purple-900/20 dark:to-orange-900/20 transition-colors">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -56,7 +56,7 @@ export default function Home() {
                 <div className="text-gray-700 dark:text-gray-300 font-medium">Technologies</div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-8 rounded-2xl shadow-md border border-purple-200 dark:border-purple-800/30 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
-                <div className="text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2">4</div>
+                <div className="text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2">12</div>
                 <div className="text-gray-700 dark:text-gray-300 font-medium">Active Projects</div>
               </div>
               <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-8 rounded-2xl shadow-md border border-green-200 dark:border-green-800/30 group text-center transition-all duration-300 active:scale-95 md:shadow-sm md:hover:shadow-md md:hover:-translate-y-1">
@@ -458,7 +458,7 @@ export default function Home() {
                   <div className="text-sm text-gray-600 dark:text-gray-400">Founded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">4</div>
+                  <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">12</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">Active Projects</div>
                 </div>
                 <div className="text-center">

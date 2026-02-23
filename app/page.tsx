@@ -283,7 +283,7 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 bg-white dark:bg-gray-900 transition-colors">
+      <section className="py-24 bg-gradient-to-br from-blue-50 via-purple-50 to-orange-50 dark:from-blue-900/20 dark:via-purple-900/20 dark:to-orange-900/20 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block bg-blue-600 dark:bg-blue-500 text-white text-sm font-medium px-5 py-2.5 rounded-full mb-4">
@@ -517,7 +517,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 bg-white dark:bg-gray-900 transition-colors">
+      <section className="py-24 bg-gradient-to-br from-blue-50 via-purple-50 to-orange-50 dark:from-blue-900/20 dark:via-purple-900/20 dark:to-orange-900/20 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block bg-blue-600 dark:bg-blue-500 text-white text-sm font-medium px-5 py-2.5 rounded-full mb-4">

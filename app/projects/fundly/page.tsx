@@ -160,11 +160,12 @@ export default function FundlyPage() {
             >
               {isMobileApp ? (
                 <div className="relative">
+                  {/* Main phone - larger and in front */}
                   <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="w-[280px] h-[570px] bg-black rounded-[3rem] p-3 shadow-2xl"
+                    className="relative z-10 w-[280px] h-[570px] bg-black rounded-[3rem] p-3 shadow-2xl"
                   >
                     <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
                       <div className="h-6 bg-white flex items-center justify-center">
@@ -181,22 +182,27 @@ export default function FundlyPage() {
                       </div>
                     </div>
                   </motion.div>
-                  {/* Floating second phone */}
+                  {/* Background phone - smaller and transparent, peeking from right */}
                   {project.screenshots[1] && (
                     <motion.div
                       initial={{ opacity: 0, scale: 0.8, rotate: 0 }}
-                      animate={{ opacity: 0.4, scale: 1, rotate: 12 }}
+                      animate={{ opacity: 1, scale: 1, rotate: 8 }}
                       transition={{ duration: 0.6, delay: 0.4 }}
-                      className="absolute -right-16 top-20 w-[200px] h-[400px] bg-black rounded-[2rem] p-2 shadow-xl"
+                      className="absolute -right-24 top-16 w-[240px] h-[570px] bg-black rounded-[2.5rem] p-2.5 shadow-xl opacity-30"
                     >
-                      <div className="w-full h-full bg-white rounded-[1.5rem] overflow-hidden">
-                        <ImageWithFallback
-                          src={project.screenshots[1]}
-                          alt={`${project.name} screenshot 2`}
-                          className="w-full h-full object-cover"
-                          width={200}
-                          height={400}
-                        />
+                      <div className="w-full h-full bg-white rounded-[2rem] overflow-hidden">
+                        <div className="h-6 bg-white flex items-center justify-center">
+                          <div className="w-20 h-3 bg-black rounded-full"></div>
+                        </div>
+                        <div className="h-full -mt-6 pt-6">
+                          <ImageWithFallback
+                            src={project.screenshots[1]}
+                            alt={`${project.name} screenshot 2`}
+                            className="w-full h-full object-cover"
+                            width={240}
+                            height={570}
+                          />
+                        </div>
                       </div>
                     </motion.div>
                   )}
